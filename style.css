@@ -1,6 +1,28 @@
 body{
+    background-color: hsl(240, 73%, 65%);
     margin: 0;
     padding: 0;
+
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.card{
+    background: hsl(0, 0%, 100%);
+    overflow: hidden;
+    width: 100%;
+
+    margin: auto;
+}
+
+.card__img{
+    background-color: red;
+    border: 1px solid black;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 25px;
 }
 
 .attribution{
