@@ -23,12 +23,33 @@ body{
 
 }
 
+.card__img--dekstop{
+
+}
+
+.card__img--mobile{
+    width: 250px;
+    
+}
+
 .card__text{
     background: hsl(0, 0%, 100%);
     border-radius: 25px;
     overflow: hidden;
-    padding: 15px; /*Aqui! */
-    text-align: center;
+    padding: 25px; /*Aqui! */
+}
+
+.card__text--img-desktop{
+
+}
+
+.card__text--img-mobile{
+
+}
+
+.card__text--title{
+    font-size: 2rem;
+    text-align: center; /*aqui*/
 }
 
 .attribution{
