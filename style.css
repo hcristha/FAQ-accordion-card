@@ -9,20 +9,20 @@ body{
 }
 
 .card{
-    background: hsl(0, 0%, 100%);
-    overflow: hidden;
-    width: 100%;
 
-    margin: auto;
 }
 
 .card__img{
-    background-color: red;
-    border: 1px solid black;
-    overflow: hidden;
+    
+}
 
-    margin: 0;
-    padding: 25px;
+.card__text{
+    background: hsl(0, 0%, 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+
+    margin: auto;
 }
 
 .attribution{
