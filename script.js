@@ -3,6 +3,9 @@ function jsIcon0(img){
 
     let answer0 = document.getElementsByClassName("js-answer0")[0];
     answer0.style.display = "inline";
+
+    c = 0;
+    //while(c < 99999){c += 1;} contar número de cliques
 }
 
 function jsIcon1(img){
