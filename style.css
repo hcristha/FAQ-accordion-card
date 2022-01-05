@@ -52,6 +52,18 @@ body{
     text-align: center; /*aqui*/
 }
 
+.card__text--question{
+    
+}
+
+.card__text--icon{
+    float: right;
+}
+
+.card__text--answer{
+    display: none;
+}
+
 .attribution{
     font-size: 11px; text-align: center;
 }
