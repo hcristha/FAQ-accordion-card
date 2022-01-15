@@ -21,19 +21,21 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
-    width: 100%; /*flexbox vale a pena?*/
+    width: 100%;
+    text-align: center;
 }
 
-.card__img{
-    transform: translateY(40%);
-}
-
-.card__img--dekstop{
+.card__img--desktop{
 
 }
 
 .card__img--mobile{
-    width: 250px;    
+    transform: translateY(40%);
+    width: 240px; 
+}
+
+.card__img--dekstop{
+
 }
 
 .card__text{
@@ -49,13 +51,6 @@ body{
     align-items: center;
 }
 
-.card__text--img-desktop{
-
-}
-
-.card__text--img-mobile{
-    width: 250px;
-}
 
 .card__text--faq{
     display: flex;
