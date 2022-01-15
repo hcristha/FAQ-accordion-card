@@ -11,7 +11,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
 
-    padding-top: 10px;/*aqui*/
+    /* padding-top: 5px; */
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -38,6 +38,7 @@ body{
 
 .card__img--mobile{
     width: 250px;
+    height: 180px;
     
 }
 
@@ -47,6 +48,12 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__text--img-desktop{
@@ -54,12 +61,13 @@ body{
 }
 
 .card__text--img-mobile{
-
+    
 }
 
 .card__text--title{
     font-size: 2rem;
-    text-align: center; /*aqui*/
+    /* text-align: center; */
+    align-self: center;/*como separar title da img?*/
 }
 
 .card__text--question{
