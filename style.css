@@ -17,15 +17,11 @@ body{
 }
 
 .card{
-    background-color: rgb(255, 250, 117);
+    /* background-color: rgb(255, 250, 117); */
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
-    width: 100%;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    width: 100%; /*flexbox vale a pena?*/
 }
 
 .card__img{
@@ -40,24 +36,6 @@ body{
     width: 250px;    
 }
 
-.card__pattern{
-    background-color: hsl(240, 5%, 91%);
-    width: 100%;
-    overflow: hidden;
-
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-.card__pattern--img-desktop{
-
-}
-
-.card__pattern--img-mobile{
-    width: 250px;
-}
-
 .card__text{
     background: hsl(240, 5%, 91%);
     border-radius: 25px;
@@ -67,32 +45,46 @@ body{
     height: 500px;
 
     display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.card__text--img-desktop{
+
+}
+
+.card__text--img-mobile{
+    width: 250px;
+}
+
+.card__text--faq{
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 
-.card__text--title{
+.card__text--faq-title{
     font-size: 2rem;
-    /* text-align: center; */
+    text-align: center;
     /*como deixar o title sozinho?*/
     
     
 }
 
-.card__text--question{
+.card__text--faq-question{
    
 }
 
-.card__text--icon{
+.card__text--faq-icon{
     
 }
 
-.card__text--answer{
-    text-align: justify;
+.card__text--faq-answer{
+    /* text-align: justify; */
     display: none;
-    margin: 0;
-    margin-left: 50px;
+    /* margin: 0;
+    margin-left: 50px; */
 }
 
 .attribution{
