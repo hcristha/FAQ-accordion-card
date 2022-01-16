@@ -4,7 +4,7 @@ let c = 0;
 //resposta zero
 function jsAnswer0(img){
     // rotacionar ícone
-    img.style.transform = "rotateX(180deg)";
+    img.style.transform = "rotateX(180deg) translateY(-100%)";
 
     // questão em negrito
     let question0 = document.getElementsByClassName("js-question0")[0];
