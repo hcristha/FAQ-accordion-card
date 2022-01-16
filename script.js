@@ -4,7 +4,7 @@ let c = 0;
 //resposta zero
 function jsAnswer0(img){
     // rotacionar ícone
-    img.style.transform = "rotateX(180deg) translateY(-100%)";
+    img.style.transform = "rotateX(180deg)";
 
     // questão em negrito
     let question0 = document.getElementsByClassName("js-question0")[0];
@@ -21,7 +21,7 @@ function jsAnswer0(img){
     if (c % 2 === 0){
         function hideAnswer(){
             // rotacionar ícone a posição inicial
-            img.style.transform = "rotateX(0deg)";
+            img.style.transform = "rotateX(360deg)";
 
             // estilo da questão normal
             question0.style.fontWeight = 400;

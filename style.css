@@ -44,7 +44,11 @@ body{
 }
 
 .card__text--faq{
-    position: relative;
+    /* background-color: yellow; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;  
 }
 
 .card__text--faq-title{
@@ -57,10 +61,7 @@ body{
 }
 
 .card__text--faq-icon{
-    float: right;
-    position: absolute;
-    right: 0;
-    transform: translateY(-100%);
+    
 }
 
 .card__text--faq-answer{
