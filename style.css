@@ -120,7 +120,7 @@ a, a:link, a:visited{
     .card{
         background: var(--bg-card-text);
         height: 650px;
-        overflow: hidden; /*aqui*/
+        overflow: visible;
 
         position: relative;
     }
@@ -128,9 +128,9 @@ a, a:link, a:visited{
     .card__img-desktop{
         /* background-color: red; */
         box-sizing: border-box;
-        overflow: visible;
         width: 500px;
         height: 550px;
+        overflow: hidden;
 
         position: absolute;
         top: 0;
@@ -144,7 +144,7 @@ a, a:link, a:visited{
         position: absolute;
         left: 0;
 
-        transform: translate(-20%, 40%);
+        transform: translate(-15%, 40%);
     }
 
     .card__box{
@@ -152,7 +152,7 @@ a, a:link, a:visited{
         left: 0;
         bottom: 0;
 
-        transform: translate(-50%, -30%);
+        transform: translate(-40%, -90%);
         
     }
 
@@ -160,9 +160,18 @@ a, a:link, a:visited{
         height: 100%;
     }
 
-    .card__text--img-desktop{
+    /* .card__text--img-desktop{
         width: 50%;
+    } */
+
+    .card__text--img-mobile{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        transform: translate(-50%, 10%)
     }
+
     .card__text--title{
         
         font-size: 2rem;   
