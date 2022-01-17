@@ -106,8 +106,8 @@ hr{
     text-align: center;
     text-shadow: 2px 2px 10px hsl(273, 75%, 68%);
 }
-    
-a:visited{
+
+a, a:link, a:visited{
     color: black;
 }
 
@@ -125,9 +125,23 @@ a:visited{
         flex-flow: row nowrap;
     }
 
-    .card__img--desktop{
-        width: 50%;/*por que não edita?*/
-        height: 50%;
+    .card__img-desktop{
+        background-image: url(images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1400px;
+        height: 400px;
+    }
+
+    .card__img--mobile{
+        background-color: yellow;
+        width: 400px;
+    }
+
+    .card__box{
+        /* position: absolute;
+        bottom: 0;
+        left: 0; */
     }
 
     .card__text{
