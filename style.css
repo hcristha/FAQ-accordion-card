@@ -44,7 +44,9 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    height: 550px;    
+    height: 550px; 
+    padding-left: 20px;  
+    padding-right: 20px;
 }
 
 .card__text--title{
@@ -54,10 +56,10 @@ body{
 .card__text--faq{
     background-color: yellow;
     box-sizing: border-box;
-    display: flex;
-    width: 75%;
     overflow: hidden;
-
+    /* padding: 20px; */
+    
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -74,15 +76,17 @@ body{
 .card__text--faq-answer{
     color: var(--answer);
     display: none;
+    /* margin: 0; */
 }
 
 hr{
     background-color: hsl(240, 5%, 91%);
     border-style: solid;
-    border-width: 0;
+    border-width: 0px;
     height: 1px;
-    margin: 0;
-    flex-shrink: 0;/*aqui, como deixar o hr esticado?*/
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .attribution{
