@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root{
-    --color-body1: hsl(273, 75%, 66%);
-    --color-body2: hsl(240, 73%, 65%);
-    --card-text: hsl(0, 0%, 100%);
+    --bg-body1: hsl(273, 75%, 66%);
+    --bg-body2: hsl(240, 73%, 65%);
+    --bg-card-text: hsl(0, 0%, 100%);
+    --title-question: hsl(238, 29%, 16%);
     --hover-question: hsl(14, 88%, 65%);
     --answer: hsl(240, 6%, 50%);
 }
 
 body{
-    background-image: linear-gradient(var(--color-body1), var(--color-body2));
+    background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
@@ -23,7 +24,8 @@ body{
 }
 
 .card{
-    box-shadow: 1px 20px 25px -10px #6962e6;
+    box-shadow: 1px 20px 15px -15px #3e3988;
+    border-radius: 25px;
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
@@ -41,7 +43,7 @@ body{
 }
 
 .card__text{
-    background: var(--card-text);
+    background: var(--bg-card-text);
     border-radius: 25px;
     box-sizing: border-box;
     overflow: hidden;
@@ -52,7 +54,7 @@ body{
 }
 
 .card__text--title{
-    color: hsl(238, 29%, 16%);
+    color: var(--title-question);
     font-size: 2rem;   
 }
 
@@ -68,7 +70,7 @@ body{
 }
 
 .card__text--faq-question{
-    color: hsl(238, 29%, 16%);
+    color: var(--title-question);
     margin: 0;
     font-size: 0.8rem;
 }
@@ -101,10 +103,9 @@ hr{
 .attribution{
     font-size: 0.7rem;
     text-align: center;
-    text-shadow: 2px 2px 10px hsl(273, 75%, 66%);
+    text-shadow: 2px 2px 10px hsl(273, 75%, 68%);
 }
     
-.attribution a{
-    color: hsl(238, 29%, 16%);/*aqui*/
-    text-decoration: none;
+a:visited{
+    color: black;
 }
