@@ -23,7 +23,7 @@ body{
 }
 
 .card{
-    box-shadow: 5px 20px 5px hsl(273, 75%, 66%);
+    box-shadow: 1px 20px 25px -10px #6962e6;
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
@@ -52,6 +52,7 @@ body{
 }
 
 .card__text--title{
+    color: hsl(238, 29%, 16%);
     font-size: 2rem;   
 }
 
@@ -67,6 +68,7 @@ body{
 }
 
 .card__text--faq-question{
+    color: hsl(238, 29%, 16%);
     margin: 0;
     font-size: 0.8rem;
 }
@@ -99,8 +101,10 @@ hr{
 .attribution{
     font-size: 0.7rem;
     text-align: center;
+    text-shadow: 2px 2px 10px hsl(273, 75%, 66%);
 }
     
 .attribution a{
-    color: hsl(228, 45%, 44%); 
+    color: hsl(238, 29%, 16%);/*aqui*/
+    text-decoration: none;
 }
