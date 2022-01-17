@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 900px;/*por que ficou branco o fundo do body?*/
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
@@ -39,7 +39,7 @@ body{
 
 .card__img--mobile{
     transform: translateY(40%);
-    width: 240px; 
+    width: 240px;
 }
 
 .card__text{
@@ -84,9 +84,11 @@ body{
 }
 
 .card__text--faq-answer{
+    /* background-color: yellow; */
     color: var(--answer);
     display: none;
     text-align: left;
+    width: 100%;
     padding-right: 20px;
 }
 
