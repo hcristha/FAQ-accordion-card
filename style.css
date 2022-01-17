@@ -120,28 +120,40 @@ a, a:link, a:visited{
     .card{
         background: var(--bg-card-text);
         height: 650px;
+        overflow: hidden; /*aqui*/
 
-        display: flex;
-        flex-flow: row nowrap;
+        position: relative;
     }
 
     .card__img-desktop{
-        background-image: url(images/illustration-woman-online-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 1400px;
-        height: 400px;
+        /* background-color: red; */
+        box-sizing: border-box;
+        overflow: visible;
+        width: 500px;
+        height: 550px;
+
+        position: absolute;
+        top: 0;
+
     }
 
     .card__img--mobile{
-        background-color: yellow;
-        width: 400px;
+        /* background-color: yellow; */
+        width: 500px;
+
+        position: absolute;
+        left: 0;
+
+        transform: translate(-20%, 40%);
     }
 
     .card__box{
-        /* position: absolute;
+        position: absolute;
+        left: 0;
         bottom: 0;
-        left: 0; */
+
+        transform: translate(-50%, -30%);
+        
     }
 
     .card__text{
