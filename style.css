@@ -19,8 +19,7 @@ body{
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
 }
 
 .card{
@@ -110,4 +109,70 @@ hr{
     
 a:visited{
     color: black;
+}
+
+/*desktop*/
+@media screen and (min-width: 1440px){
+    body{
+        padding: 8% 15% 0;
+    }
+
+    .card{
+        background: var(--bg-card-text);
+        height: 650px;
+
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .card__img--desktop{
+        width: 50%;/*por que não edita?*/
+        height: 50%;
+    }
+
+    .card__text{
+        height: 100%;
+    }
+
+    .card__text--img-desktop{
+        width: 50%;
+    }
+    .card__text--title{
+        
+        font-size: 2rem;   
+    }
+
+    .card__text--faq{
+        margin-top: 10px;
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__text--faq-question{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .card__text--faq-icon{
+        
+    }
+
+    .card__text--faq-answer{
+        /* background-color: yellow; */
+        text-align: left;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    hr{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .attribution{
+        font-size: 0.7rem;
+    }
 }
