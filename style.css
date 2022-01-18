@@ -123,26 +123,23 @@ a, a:link, a:visited{
         overflow: visible;
 
         position: relative;
+        display: flex;
+        flex-flow: column-reverse wrap;
     }
 
-    div.card__img-desktop{
+    div.card__img{
         /* background-color: blue; */
         box-sizing: border-box;
         width: 450px;
         height: 550px;
         overflow: hidden;
 
-        position: absolute;
-        top: 0;
-
+        position: relative;
     }
 
     .card__img--mobile{
         /* background-color: yellow; */
         width: 450px;
-
-        position: absolute;
-        left: 0;
 
         transform: translate(-17%, 30%);
     }
@@ -161,17 +158,18 @@ a, a:link, a:visited{
         bottom: 0;
         left: 0;
 
-        transform: translate(-55%, 10%);
+        transform: translate(-60%, 11%);
     }
 
     .card__text{
-        /* width: 100%;
-        background-color: red; */
+        width: 400px;
+        height: 600px;
+        background-color: red;
         overflow: hidden;
 
         display: flex;
-        flex-flow: column wrap-reverse;
-        align-items: center;
+        flex-flow: column wrap;
+        /* align-items: center; */
 
 
     }
@@ -182,14 +180,13 @@ a, a:link, a:visited{
 
     .card__text--title{
         font-size: 2rem;
-        margin-top: 20%; 
     }
 
     .card__text--faq{
         /* background-color: yellow; */
         margin-top: 15px;
-        margin-left: 45%;
-        width: 350px;
+        /* margin-left: 50%; */
+        width: 100%;
         
         display: flex;
         flex-flow: row wrap;
