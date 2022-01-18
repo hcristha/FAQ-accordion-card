@@ -114,7 +114,7 @@ a, a:link, a:visited{
 /*desktop*/
 @media screen and (min-width: 1440px){
     body{
-        padding: 8% 15% 0;
+        padding: 8% 17% 0;
     }
 
     .card{
@@ -126,11 +126,12 @@ a, a:link, a:visited{
     }
 
     .card__img-desktop{
-        /* background-color: red; */
+        /* background-color: blue; */
         box-sizing: border-box;
         width: 500px;
         height: 550px;
         overflow: hidden;
+        margin-right: 40px;
 
         position: absolute;
         top: 0;
@@ -157,11 +158,12 @@ a, a:link, a:visited{
     }
 
     .card__text{
-        width: 300px;
-        background-color: red;
+        /* width: 300px; */
+        /* background-color: red; */
         display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start; /*aqui!*/
+        flex-flow: column wrap-reverse;
+        align-items: center;
+
 
     }
 
@@ -178,12 +180,15 @@ a, a:link, a:visited{
     }
 
     .card__text--title{
-        font-size: 2rem;   
+        font-size: 2rem;
+        margin-top: 20%; 
     }
 
     .card__text--faq{
-        margin-top: 10px;
-        width: 100%;
+        /* background-color: yellow; */
+        margin-top: 15px;
+        margin-left: 30%;
+        width: 350px;
         
         display: flex;
         flex-flow: row wrap;
@@ -192,8 +197,7 @@ a, a:link, a:visited{
     }
 
     .card__text--faq-question{
-        margin: 0;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .card__text--faq-icon{
