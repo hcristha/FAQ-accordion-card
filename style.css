@@ -152,12 +152,17 @@ a, a:link, a:visited{
         left: 0;
         bottom: 0;
 
-        transform: translate(-40%, -90%);
+        transform: translate(-45%, -90%);
         
     }
 
     .card__text{
-        height: 100%;
+        width: 300px;
+        background-color: red;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start; /*aqui!*/
+
     }
 
     /* .card__text--img-desktop{
@@ -169,16 +174,16 @@ a, a:link, a:visited{
         bottom: 0;
         left: 0;
 
-        transform: translate(-50%, 10%)
+        transform: translate(-55%, 10%)
     }
 
     .card__text--title{
-        
         font-size: 2rem;   
     }
 
     .card__text--faq{
         margin-top: 10px;
+        width: 100%;
         
         display: flex;
         flex-flow: row wrap;
