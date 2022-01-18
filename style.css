@@ -22,7 +22,7 @@ body{
     font-size: 12px;
 }
 
-.card{
+main.card{
     box-shadow: 1px 20px 15px -15px #3e3988;
     border-radius: 25px;
     box-sizing: border-box;
@@ -32,16 +32,12 @@ body{
     text-align: center;
 }
 
-.card__img--desktop{
-
-}
-
 .card__img--mobile{
     transform: translateY(40%);
     width: 240px;
 }
 
-.card__text{
+div.card__text{
     background: var(--bg-card-text);
     border-radius: 25px;
     box-sizing: border-box;
@@ -52,7 +48,7 @@ body{
     padding-bottom: 20px;
 }
 
-.card__text--title{
+div.card__text--title{
     color: var(--title-question);
     font-size: 2rem;   
 }
@@ -70,19 +66,15 @@ div.card__text--faq{
     flex-shrink: 0;
 }
 
-.card__text--faq-question{
+p.card__text--faq-question{
     color: var(--title-question);
     margin: 0;
     font-size: 0.8rem;
     flex-shrink: 0;
 }
 
-.card__text--faq-question:hover{
+p.card__text--faq-question:hover{
     color: var(--hover-question);
-}
-
-.card__text--faq-icon{
-    
 }
 
 p.card__text--faq-answer{
@@ -106,7 +98,7 @@ hr{
     flex-shrink: 0;
 }
 
-.attribution{
+footer.attribution{
     font-size: 0.7rem;
     text-align: center;
     text-shadow: 2px 2px 10px hsl(273, 75%, 68%);
@@ -155,7 +147,6 @@ a, a:link, a:visited{
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: 1;/*aqui*/
 
         transform: translate(-60%, 11%);
     }
@@ -170,7 +161,6 @@ a, a:link, a:visited{
     }
 
     div.card__text{
-        /* background-color: pink; */
         width: 450px;
         height: 510px;
         overflow: visible;
@@ -187,17 +177,12 @@ a, a:link, a:visited{
         transform: translateX(-15%);
     }
 
-    /* .card__text--img-desktop{
-        width: 50%;
-    } */
-
     .card__text--title{
         font-size: 2rem;
         text-align: left;
     }
 
     div.card__text--faq{
-        /* background-color: rgb(255, 255, 0); */
         margin-top: 5px;
         width: 100%;
         
@@ -212,10 +197,6 @@ a, a:link, a:visited{
 
     p.card__text--faq-question{
         font-size: 1rem;
-    }
-
-    p.card__text--faq-answer{
-        /* margin: 0; */
     }
 
     footer.attribution{
