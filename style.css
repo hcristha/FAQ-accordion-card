@@ -114,17 +114,18 @@ a, a:link, a:visited{
 /*desktop*/
 @media screen and (min-width: 1440px){
     body{
-        padding: 8% 17% 0;
+        padding: 8% 17% 10%;
     }
 
     .card{
         background: var(--bg-card-text);
-        height: 550px;
+        max-height: 650px;
         overflow: visible;
 
         position: relative;
         display: flex;
         flex-flow: column-reverse wrap;
+        align-items: space-between;
     }
 
     div.card__img{
@@ -140,6 +141,8 @@ a, a:link, a:visited{
     .card__img--mobile{
         /* background-color: yellow; */
         width: 450px;
+        position: absolute;
+        left: 0;
 
         transform: translate(-17%, 30%);
     }
@@ -162,16 +165,19 @@ a, a:link, a:visited{
     }
 
     .card__text{
-        width: 400px;
-        height: 600px;
-        background-color: red;
+        width: 450px;
+        height: 650px;
+        /* background-color: red; */
         overflow: hidden;
 
         display: flex;
         flex-flow: column wrap;
-        /* align-items: center; */
 
+        position: absolute;
+        right: 0;
+        bottom: 0;
 
+        transform: translate(-10%, 30%);
     }
 
     /* .card__text--img-desktop{
@@ -180,12 +186,12 @@ a, a:link, a:visited{
 
     .card__text--title{
         font-size: 2rem;
+        text-align: left;
     }
 
     .card__text--faq{
-        /* background-color: yellow; */
+        background-color: yellow;
         margin-top: 15px;
-        /* margin-left: 50%; */
         width: 100%;
         
         display: flex;
@@ -215,6 +221,6 @@ a, a:link, a:visited{
     }
 
     .attribution{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
