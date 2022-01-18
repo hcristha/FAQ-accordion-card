@@ -119,19 +119,18 @@ a, a:link, a:visited{
 
     .card{
         background: var(--bg-card-text);
-        height: 650px;
+        height: 550px;
         overflow: visible;
 
         position: relative;
     }
 
-    .card__img-desktop{
+    div.card__img-desktop{
         /* background-color: blue; */
         box-sizing: border-box;
-        width: 500px;
+        width: 450px;
         height: 550px;
         overflow: hidden;
-        margin-right: 40px;
 
         position: absolute;
         top: 0;
@@ -140,12 +139,12 @@ a, a:link, a:visited{
 
     .card__img--mobile{
         /* background-color: yellow; */
-        width: 500px;
+        width: 450px;
 
         position: absolute;
         left: 0;
 
-        transform: translate(-15%, 40%);
+        transform: translate(-17%, 30%);
     }
 
     .card__box{
@@ -153,13 +152,23 @@ a, a:link, a:visited{
         left: 0;
         bottom: 0;
 
-        transform: translate(-45%, -90%);
+        transform: translate(-65%, -80%);
         
     }
 
+    .card__img--bg-mobile{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        transform: translate(-55%, 10%);
+    }
+
     .card__text{
-        /* width: 300px; */
-        /* background-color: red; */
+        /* width: 100%;
+        background-color: red; */
+        overflow: hidden;
+
         display: flex;
         flex-flow: column wrap-reverse;
         align-items: center;
@@ -171,14 +180,6 @@ a, a:link, a:visited{
         width: 50%;
     } */
 
-    .card__text--img-mobile{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        transform: translate(-55%, 10%)
-    }
-
     .card__text--title{
         font-size: 2rem;
         margin-top: 20%; 
@@ -187,7 +188,7 @@ a, a:link, a:visited{
     .card__text--faq{
         /* background-color: yellow; */
         margin-top: 15px;
-        margin-left: 30%;
+        margin-left: 45%;
         width: 350px;
         
         display: flex;
