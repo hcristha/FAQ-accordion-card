@@ -60,18 +60,21 @@ body{
 div.card__text--faq{
     box-sizing: border-box;
     overflow: hidden;
-    /* margin-top: 10px; */
+    margin-top: 5px;
     
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    flex-shrink: 0;
 }
 
 .card__text--faq-question{
     color: var(--title-question);
     margin: 0;
     font-size: 0.8rem;
+    flex-shrink: 0;
 }
 
 .card__text--faq-question:hover{
@@ -89,16 +92,17 @@ p.card__text--faq-answer{
     text-align: left;
     width: 100%;
     padding-right: 20px;
+    flex-shrink: 0;
 }
 
 hr{
-    background-color: hsl(240, 5%, 91%);
+    background-color: var(--title-question);
     border-style: solid;
     border-width: 0px;
     height: 1px;
     width: 100%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     flex-shrink: 0;
 }
 
@@ -127,6 +131,7 @@ a, a:link, a:visited{
         display: flex;
         flex-flow: column-reverse wrap;
         align-items: space-between;
+        align-content: space-between;
     }
 
     div.card__img{/*para esconder as imagens dentro do card*/
@@ -150,6 +155,7 @@ a, a:link, a:visited{
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: 1;/*aqui*/
 
         transform: translate(-60%, 11%);
     }
@@ -164,13 +170,15 @@ a, a:link, a:visited{
     }
 
     div.card__text{
-        background-color: red;
+        /* background-color: pink; */
         width: 450px;
-        height: 500px;
+        height: 510px;
         overflow: visible;
 
         display: flex;
         flex-flow: column nowrap;
+        align-items: space-between;
+        align-content: space-between;
 
         position: absolute;
         right: 0;
@@ -189,14 +197,17 @@ a, a:link, a:visited{
     }
 
     div.card__text--faq{
-        background-color: blue;
-        /* margin-top: 10px; */
+        /* background-color: rgb(255, 255, 0); */
+        margin-top: 5px;
         width: 100%;
         
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
+
+        flex-shrink: 0;
     }
 
     p.card__text--faq-question{
