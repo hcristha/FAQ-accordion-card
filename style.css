@@ -57,10 +57,10 @@ body{
     font-size: 2rem;   
 }
 
-.card__text--faq{
+div.card__text--faq{
     box-sizing: border-box;
     overflow: hidden;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     
     display: flex;
     flex-flow: row wrap;
@@ -82,7 +82,7 @@ body{
     
 }
 
-.card__text--faq-answer{
+p.card__text--faq-answer{
     /* background-color: yellow; */
     color: var(--answer);
     display: none;
@@ -98,7 +98,8 @@ hr{
     height: 1px;
     width: 100%;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    flex-shrink: 0;
 }
 
 .attribution{
@@ -187,7 +188,7 @@ a, a:link, a:visited{
     }
 
     div.card__text--faq{
-        margin-top: 15px;
+        /* margin-top: 10px; */
         width: 100%;
         
         display: flex;
@@ -198,6 +199,10 @@ a, a:link, a:visited{
 
     p.card__text--faq-question{
         font-size: 1rem;
+    }
+
+    p.card__text--faq-answer{
+        margin: 0;
     }
 
     footer.attribution{
