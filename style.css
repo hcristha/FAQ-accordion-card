@@ -12,14 +12,14 @@
 
 body{
     background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
+    background-color: var(--bg-body2);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;/*por que ficou branco o fundo do body? aqui*/
+    height: 900px;
     margin: 0;
-    padding: 0;
+    padding: 0 25px;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    padding: 0 25px;
 }
 
 .card{
@@ -120,7 +120,7 @@ a, a:link, a:visited{
     main.card{
         background: var(--bg-card-text);
         max-height: 650px;
-        overflow: visible;
+        overflow: visible;/*para mostrar o card__box*/
 
         position: relative;
         display: flex;
@@ -128,7 +128,7 @@ a, a:link, a:visited{
         align-items: space-between;
     }
 
-    div.card__img{
+    div.card__img{/*para esconder as imagens dentro do card*/
         box-sizing: border-box;
         width: 450px;
         height: 550px;
