@@ -23,13 +23,12 @@ body{
 }
 
 main.card{
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0);
     box-shadow: 1px 20px 15px -15px #3e3988;
     border-radius: 25px;
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
-    width: 100%;
     max-width: 500px;
     
     position: relative;
@@ -43,22 +42,28 @@ main.card{
 }
 
 .card__img{
-    background-color: yellow;
-    /* width: 100%; */
+    background-color: rgba(226, 255, 192, 0);
+    overflow: visible;
+    width: 100%;
+    height: 200px;
     position: relative;
+   
+    transform: translateY(45%);
+
+    display: flex;
+    flex-direction: column wrap;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .card__img--bg-mobile{
-    overflow: visible;
     position: absolute;
     top: 0;
-    
 
     transform: translateY(100%);
 }
 
 .card__img--mobile{
-    transform: translateY(10%);
     width: 240px;
 }
 
@@ -72,15 +77,19 @@ div.card__text{
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    padding-left: 20px;  
-    padding-right: 20px;
-    padding-bottom: 20px;
+    max-height: 600px;
+    padding: 20px;
+    padding-top: 80px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: space-between;
 }
 
 div.card__text--title{
     color: var(--title-question);
     font-size: 2rem;
-    text-align: center;
+    align-self: center;
 }
 
 div.card__text--faq{
