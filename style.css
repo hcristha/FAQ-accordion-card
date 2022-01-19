@@ -23,6 +23,7 @@ body{
 }
 
 main.card{
+    background-color: orange;
     box-shadow: 1px 20px 15px -15px #3e3988;
     border-radius: 25px;
     box-sizing: border-box;
@@ -30,21 +31,34 @@ main.card{
     margin: auto;
     width: 100%;
     max-width: 500px;
-    text-align: center;
+    
+    position: relative;
 
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: space-between; */
+
+}
+
+.card__img{
+    background-color: yellow;
+    /* width: 100%; */
     position: relative;
 }
 
 .card__img--bg-mobile{
+    overflow: visible;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    
 
-    transform: translate(-60%, 11%);
+    transform: translateY(100%);
 }
 
 .card__img--mobile{
-    /* transform: translateY(40%); */
+    transform: translateY(10%);
     width: 240px;
 }
 
@@ -53,7 +67,7 @@ img.card__box{
 }
 
 div.card__text{
-    background: var(--bg-card-text);
+    background: pink;
     border-radius: 25px;
     box-sizing: border-box;
     overflow: hidden;
@@ -65,7 +79,8 @@ div.card__text{
 
 div.card__text--title{
     color: var(--title-question);
-    font-size: 2rem;   
+    font-size: 2rem;
+    text-align: center;
 }
 
 div.card__text--faq{
@@ -132,9 +147,11 @@ a, a:link, a:visited{
     main.card{
         background: var(--bg-card-text);
         max-height: 650px;
+        max-width: 100%;
         overflow: visible;/*para mostrar o card__box*/
 
         position: relative;
+        
         display: flex;
         flex-flow: column-reverse wrap;
         align-items: space-between;
