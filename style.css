@@ -29,12 +29,27 @@ main.card{
     overflow: hidden;
     margin: auto;
     width: 100%;
+    max-width: 500px;
     text-align: center;
+
+    position: relative;
+}
+
+.card__img--bg-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translate(-60%, 11%);
 }
 
 .card__img--mobile{
-    transform: translateY(40%);
+    /* transform: translateY(40%); */
     width: 240px;
+}
+
+img.card__box{
+    display: none;    
 }
 
 div.card__text{
@@ -135,14 +150,6 @@ a, a:link, a:visited{
         position: relative;
     }
 
-    .card__img--mobile{
-        width: 450px;
-        position: absolute;
-        left: 0;
-
-        transform: translate(-17%, 30%);
-    }
-
     .card__img--bg-mobile{
         position: absolute;
         bottom: 0;
@@ -151,7 +158,16 @@ a, a:link, a:visited{
         transform: translate(-60%, 11%);
     }
 
+    .card__img--mobile{
+        width: 450px;
+        position: absolute;
+        left: 0;
+
+        transform: translate(-17%, 30%);
+    }
+
     img.card__box{
+        display: inline-block;
         position: absolute;
         left: 0;
         bottom: 0;
