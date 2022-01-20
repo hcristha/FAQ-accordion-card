@@ -4,7 +4,7 @@
 :root{
     --bg-body1: hsl(273, 75%, 66%);
     --bg-body2: hsl(240, 73%, 65%);
-    --bg-card-content: hsl(0, 0%, 100%);
+    --bg-content: hsl(0, 0%, 100%);
     --title-question: hsl(238, 29%, 16%);
     --hover-question: hsl(14, 88%, 65%);
     --answer: hsl(240, 6%, 50%);
@@ -17,19 +17,13 @@ body{
     background-color: var(--bg-body2);
     height: 900px;
     margin: 0;
-    padding: 150px 15px 0;
+    padding: 150px 20px 0;
 }
 
 main.card{
-    /* background-color: rgb(255, 209, 123); */
-    /* overflow: hidden; */
-    box-sizing: border-box;
-    margin: auto;
-}
-
-div.card__content{
-    background-color: pink;
+    background-color: var(--bg-content);
     border-radius: 25px;
+    box-shadow: 0 15px 15px 0 hsla(240, 55%, 27%, 0.398);
     box-sizing: border-box;
     padding: 0 25px 25px;
     width: 100%;
@@ -42,12 +36,10 @@ div.card__content{
 }
 
 div.card__img{
-    background-color: rgb(255, 192, 203);
+    background-color: var(--bg-content);
     border-radius: 25px;
     box-sizing: border-box;
     height: 110px;
-
-    position: relative;
 
     display: flex;
     flex-flow: column nowrap;
@@ -71,11 +63,9 @@ img.card__box{
 .card__title{
     color: var(--title-question);
     font-size: 2rem;
-    /* text-align: center; */
 }
 
 .card__faq{
-    background-color: rgb(255, 255, 172);
     width: 100%;
     margin-bottom: 10px;
 
@@ -104,4 +94,16 @@ hr{
     width: 100%;
     margin: 0;
     margin-top: 10px;
+}
+
+footer.attribution{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-shadow: 1px 1px 10px var(--bg-body1);
+}
+
+a, a:visited, a:link{
+    color: black;
 }
