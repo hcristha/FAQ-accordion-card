@@ -33,7 +33,7 @@ div.card__content{
     box-sizing: border-box;
     padding: 0 25px 25px;
     width: 100%;
-    /* max-width: 450px; */
+    max-width: 450px;
     margin: auto;
 
     display: flex;
