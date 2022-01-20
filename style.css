@@ -29,6 +29,8 @@ div.card__content{
     border-radius: 25px;
     box-sizing: border-box;
     padding: 0 25px 25px;
+    max-width: 500px;
+    margin: auto;
 
     display: flex;
     flex-flow: column wrap;
@@ -68,8 +70,10 @@ img.card__box{
 }
 
 .card__faq{
-    background-color: yellow;
+    background-color: rgb(255, 255, 172);
     width: 100%;
+    margin-bottom: 10px;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -78,10 +82,13 @@ img.card__box{
 
 .card__faq-question{
     color: var(--title-question);
+    margin: 0;
 }
 
 .card__faq-answer{
     color: var(--answer);
+    display: none;
+    /* margin: 0; */
 }
 
 hr{
@@ -89,5 +96,7 @@ hr{
     border-style: solid;
     border-width: 0;
     height: 1px;
+    width: 100%;
     margin: 0;
+    margin-top: 10px;
 }
