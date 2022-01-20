@@ -26,6 +26,26 @@ main.card{
 
 div.card__img{
     background-color: rgb(255, 218, 225);
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card__img--bg-mobile{
+    position: absolute;
+    /* bottom: 0; */
+}
+
+.card__img--mobile{
+    position: absolute;
+    /* bottom:0; */
+
+    width: 240px;
 }
 
 img.card__box{
@@ -34,6 +54,7 @@ img.card__box{
 
 div.card__text{
     background-color: var(--bg-card-text);
+    border-radius: 25px;
 }
 
 
