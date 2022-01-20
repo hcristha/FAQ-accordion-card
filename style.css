@@ -9,3 +9,31 @@
     --hover-question: hsl(14, 88%, 65%);
     --answer: hsl(240, 6%, 50%);
 }
+
+body{
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
+    margin: 0;
+    padding: 0 5%;
+}
+
+main.card{
+    background-color: rgb(255, 209, 123);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+div.card__img{
+    background-color: rgb(255, 218, 225);
+}
+
+img.card__box{
+    display: none;
+}
+
+div.card__text{
+    background-color: var(--bg-card-text);
+}
+
+
