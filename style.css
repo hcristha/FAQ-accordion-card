@@ -4,7 +4,7 @@
 :root{
     --bg-body1: hsl(273, 75%, 66%);
     --bg-body2: hsl(240, 73%, 65%);
-    --bg-card-text: hsl(0, 0%, 100%);
+    --bg-card-content: hsl(0, 0%, 100%);
     --title-question: hsl(238, 29%, 16%);
     --hover-question: hsl(14, 88%, 65%);
     --answer: hsl(240, 6%, 50%);
@@ -15,7 +15,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
     margin: 0;
-    padding: 5% 5% 0;
+    padding: 150px 5% 0;
 }
 
 main.card{
@@ -24,37 +24,50 @@ main.card{
     box-sizing: border-box;
 }
 
-div.card__img{
-    background-color: rgb(255, 218, 225);
+div.card__content{
+    background-color: var(--bg-card-content);
     border-radius: 25px;
     box-sizing: border-box;
-    /* height: 250px;
-    width: 100%; */
+    padding: 0 25px 25px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+div.card__img{
+    background-color: rgb(255, 177, 177);
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 130px;
 
     position: relative;
 
     display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
 
 .card__img--bg-mobile{
-    transform: translateY(-100%);
+    
 }
 
 .card__img--mobile{
     width: 240px;
 
-    transform: translateY(-100%);
+    transform: translateY(-120%);
 }
 
 img.card__box{
     display: none;
 }
 
-div.card__text{
-    background-color: var(--bg-card-text);
-    border-radius: 25px;
+.card__title{
+    color: var(--title-question);
+    font-size: 2rem;
+    text-align: center;
 }
 
-
+.card__faq{
+    display: flex;
+    flex-flow: row wrap;
+}
