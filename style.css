@@ -68,6 +68,26 @@ img.card__box{
 }
 
 .card__faq{
+    background-color: yellow;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__faq-question{
+    color: var(--title-question);
+}
+
+.card__faq-answer{
+    color: var(--answer);
+}
+
+hr{
+    background-color: hsl(0, 0%, 0%);
+    border-style: solid;
+    border-width: 0;
+    height: 1px;
+    margin: 0;
 }
