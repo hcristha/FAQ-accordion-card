@@ -14,33 +14,38 @@ body{
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
+    background-color: var(--bg-body2);
+    height: 900px;
     margin: 0;
-    padding: 150px 5% 0;
+    padding: 150px 15px 0;
 }
 
 main.card{
     /* background-color: rgb(255, 209, 123); */
     /* overflow: hidden; */
     box-sizing: border-box;
+    margin: auto;
 }
 
 div.card__content{
-    background-color: var(--bg-card-content);
+    background-color: pink;
     border-radius: 25px;
     box-sizing: border-box;
     padding: 0 25px 25px;
-    max-width: 500px;
+    width: 100%;
+    /* max-width: 450px; */
     margin: auto;
 
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
 }
 
 div.card__img{
-    background-color: rgb(255, 177, 177);
+    background-color: rgb(255, 192, 203);
     border-radius: 25px;
     box-sizing: border-box;
-    height: 130px;
+    height: 110px;
 
     position: relative;
 
@@ -66,7 +71,7 @@ img.card__box{
 .card__title{
     color: var(--title-question);
     font-size: 2rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .card__faq{
@@ -88,7 +93,7 @@ img.card__box{
 .card__faq-answer{
     color: var(--answer);
     display: none;
-    /* margin: 0; */
+    margin-right: 25px;
 }
 
 hr{
