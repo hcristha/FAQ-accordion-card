@@ -147,13 +147,16 @@ a, a:visited, a:link{
     }
     
     .card__img--bg-mobile{
-        
+        height: 800px;
+        transform: translate(-60%, 15%);
     }
 
     .card__img--mobile{
         width: 400px;
         position: absolute;
         left: 0;
+        top: 0;
+        transform: translate(-17%, 25%);
     }
     
     img.card__box{
@@ -161,11 +164,16 @@ a, a:visited, a:link{
         position: absolute;
         bottom: 0;
         left: 0;
+
+        transform: translate(-60%, -50%);
+    }
+
+    .card__title{
+        margin-top: 50px;
     }
 
     .card__faq{
-        /* background-color: red; */
-        width: 425px;
+        width: 300px;
         margin-bottom: 10px;
     
         display: flex;
