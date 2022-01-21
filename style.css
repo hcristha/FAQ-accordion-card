@@ -46,10 +46,6 @@ div.card__img{
     align-items: center;
 }
 
-.card__img--bg-mobile{
-    
-}
-
 .card__img--mobile{
     width: 240px;
 
@@ -77,17 +73,19 @@ img.card__box{
 
 .card__faq-question{
     color: var(--title-question);
+    font-size: 0.9rem;
     margin: 0;
 }
 
 .card__faq-answer{
     color: var(--answer);
     display: none;
+    font-size: 0.8rem;
     margin-right: 25px;
 }
 
 hr{
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(238, 29%, 16%);
     border-style: solid;
     border-width: 0;
     height: 1px;
@@ -101,9 +99,12 @@ footer.attribution{
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    text-shadow: 1px 1px 10px var(--bg-body1);
+    text-shadow: 1px 1px 10px hsl(273, 75%, 66%);
 }
 
 a, a:visited, a:link{
     color: black;
 }
+
+/*desktop*/
+@media 
