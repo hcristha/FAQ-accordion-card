@@ -15,6 +15,8 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient(var(--bg-body1), var(--bg-body2));
     background-color: var(--bg-body2);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 900px;
     margin: 0;
     padding: 150px 20px 0;
@@ -115,13 +117,13 @@ a, a:visited, a:link{
     body{
         height: 900px;
         margin: 0;
-        padding: 150px 50px 0;
+        padding: 150px 200px 0;
     }
 
     main.card{
-        padding: 0 25px 25px;
-        width: 100%;
-        max-width: 100%;/*aqui*/
+        background-color: rgb(255, 209, 217);
+        padding: 0 25px 25px 0;
+        max-width: 100%;
         height: 450px;        
 
         display: flex;
@@ -129,14 +131,24 @@ a, a:visited, a:link{
     }
 
     div.card__img{
-        background-color: rgb(255, 255, 174);
-        height: 500px;
-        width: 100%;
+        background-color: pink;
+        height: 450px;
+        width: 550px;
         overflow: hidden;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
     }
     
+    .card__img--bg-mobile{
+        width: 966px;
+        height: 945px;
+        transform: translate(-20%, -40%);/*aqui*/
+    }
+
     .card__img--mobile{
-        width: 500px;
+        width: 400px;
     }
     
     img.card__box{
