@@ -122,36 +122,55 @@ a, a:visited, a:link{
 
     main.card{
         background-color: rgb(255, 209, 217);
-        padding: 0 25px 25px 0;
+        padding: 0;
         max-width: 100%;
         height: 450px;        
 
+        position: relative;
+
         display: flex;
         flex-flow: column wrap;
+        align-items: flex-start;
     }
 
     div.card__img{
         background-color: pink;
         height: 450px;
-        width: 550px;
+        width: 450px;
         overflow: hidden;
 
+        position: relative;
+
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column-reverse wrap;
         align-items: flex-end;
     }
     
     .card__img--bg-mobile{
-        width: 966px;
-        height: 945px;
-        transform: translate(-20%, -40%);/*aqui*/
+        
     }
 
     .card__img--mobile{
         width: 400px;
+        position: absolute;
+        left: 0;
     }
     
     img.card__box{
         display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card__faq{
+        /* background-color: red; */
+        width: 425px;
+        margin-bottom: 10px;
+    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
