@@ -144,7 +144,8 @@ a, a:visited, a:link{
     div.card__img{
         height: 450px;
         width: 450px;
-        overflow: hidden;
+        /* overflow-x: hidden;
+        overflow-y: visible; */
 
         position: relative;
 
