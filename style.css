@@ -77,6 +77,10 @@ img.card__box{
     margin: 0;
 }
 
+.card__faq-question:hover{
+    color: var(--hover-question);
+}
+
 .card__faq-answer{
     color: var(--answer);
     display: none;
@@ -107,4 +111,35 @@ a, a:visited, a:link{
 }
 
 /*desktop*/
-@media 
+@media screen and (min-width: 1440px){
+    body{
+        height: 900px;
+        margin: 0;
+        padding: 150px 50px 0;
+    }
+
+    main.card{
+        padding: 0 25px 25px;
+        width: 100%;
+        max-width: 100%;/*aqui*/
+        height: 450px;        
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    div.card__img{
+        background-color: rgb(255, 255, 174);
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .card__img--mobile{
+        width: 500px;
+    }
+    
+    img.card__box{
+        display: block;
+    }
+}
