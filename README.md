@@ -34,7 +34,7 @@ Users should be able to:
 - Mobile-first workflow
 - CSS custom properties
 - Flexbox
-- JavasScript
+- JavasScript ES6
 
 ## <!-- linha -->
 
