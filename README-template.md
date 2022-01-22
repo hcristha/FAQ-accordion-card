@@ -19,7 +19,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ## <!-- linha -->
 
 <h3 id="the-challenge">The challenge</h3>
-
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
