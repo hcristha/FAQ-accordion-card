@@ -125,27 +125,28 @@ a, a:visited, a:link{
     body{
         height: 900px;
         margin: 0;
-        padding: 150px 200px 0;
+        padding: 150px 300px 0;
     }
 
     main.card{
         background-color: lightpink;
         padding: 0;
         max-width: 100%;
-        /* height: 450px; */
-        max-height: 750px;        
+        max-height: 450px;        
 
         position: relative;
 
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
+        align-content: flex-start;
     }
 
     div.card__img{
         background-color: lightgreen;
-        height: 450px;
-        width: 450px;
+        height: 100%;
+        width: 410px;
+        overflow: hidden;
 
         position: relative;
 
@@ -175,7 +176,11 @@ a, a:visited, a:link{
     }
 
     .card__faq{
-        width: 320px;
+        background-color: lightblue;
+        width: 350px;
+        height: 500px;
+        display: flex;
+        flex-flow: column nowrap;
     }
 
     .card__faq--title{
@@ -185,11 +190,19 @@ a, a:visited, a:link{
 
     .card__issue{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .card__issue--answer{
+        margin-right: 0;
+    }
+
+    hr{
+        margin-top: 5px;/*como mostrar todo o texto?*/
     }
 }
