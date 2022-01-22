@@ -19,7 +19,7 @@ body{
     background-size: cover;
     height: 100%;
     margin: 0;
-    padding: 140px 20px 10px;
+    padding: 140px 20px 0;
 }
 
 main.card{
@@ -57,7 +57,7 @@ img.card__box{
     display: none;
 }
 
-.card__faq{
+section.card__faq{
     width: 100%;
 
     display: flex;
@@ -94,7 +94,6 @@ img.card__box{
     color: var(--answer);
     display: none;
     font-size: 0.8rem;
-    margin-right: 25px;
 }
 
 hr{
@@ -170,7 +169,7 @@ a, a:visited, a:link{
         left: -120px;
     }
 
-    .card__faq{
+    section.card__faq{
         width: 350px;
         height: 100%;
         display: flex;
@@ -190,10 +189,6 @@ a, a:visited, a:link{
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .card__issue--answer{
-        margin-right: 0;
     }
 
     hr{
