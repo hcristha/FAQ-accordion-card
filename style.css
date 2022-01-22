@@ -125,7 +125,9 @@ a, a:visited, a:link{
     }
 
     main.card{
+        background-color: lightblue;
         padding: 0;
+        padding-right: 50px;
         max-width: 100%;
         max-height: 450px;        
 
@@ -133,8 +135,7 @@ a, a:visited, a:link{
 
         display: flex;
         flex-flow: column wrap;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
     }
 
     div.card__img{
@@ -147,6 +148,7 @@ a, a:visited, a:link{
         display: flex;
         flex-flow: column-reverse wrap;
         align-items: flex-end;
+        align-self: flex-start;
     }
     
     .card__img--bg-mobile{
