@@ -125,7 +125,6 @@ a, a:visited, a:link{
     }
 
     main.card{
-        background-color: lightblue;
         padding: 0;
         padding-right: 50px;
         max-width: 100%;
