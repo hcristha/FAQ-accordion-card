@@ -1,5 +1,6 @@
 // contador de cliques inicia em 0
-let c = 0;
+var c = 0;
+var lastAnswer;
 
 //resposta zero
 function jsAnswer0(img){
@@ -12,6 +13,9 @@ function jsAnswer0(img){
 
     // mostrar a resposta
     let answer0 = document.getElementsByClassName("js-answer0")[0];
+    lastAnswer = answer0; // última questão clicada
+    console.log(lastAnswer);
+
     answer0.style.display = "inline";
 
     // somar número de cliques no contador
@@ -34,6 +38,10 @@ function jsAnswer0(img){
     }
 }
 
+
+// ao clicar na prox img esconder resposta anterior
+
+
 //resposta um
 function jsAnswer1(img){
     // rotacionar ícone
@@ -42,9 +50,19 @@ function jsAnswer1(img){
     // questão em negrito
     let question1 = document.getElementsByClassName("js-question1")[0];
     question1.style.fontWeight = 700;
+    
+    // esconder resposta anterior
+    function hideLastAnswer(){
+        lastAnswer.style.display = "none";
+    }
+
+    hideLastAnswer();
 
     // mostrar a resposta
     let answer1 = document.getElementsByClassName("js-answer1")[0];
+    lastAnswer = answer1; // última questão clicada
+    console.log(lastAnswer);
+
     answer1.style.display = "inline";
 
     // somar número de cliques no contador
