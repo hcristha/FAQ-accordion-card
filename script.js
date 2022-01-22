@@ -1,41 +1,38 @@
-// contador de cliques inicia em 0
-var c = 0;
 var lastAnswer;
+var lastQuestion;
+var lastImg;
 
 //resposta zero
 function jsAnswer0(img){
+    // esconder resposta anterior se for diferente de undefined
+    if(lastImg !== undefined && lastQuestion !== undefined && lastAnswer !== undefined){
+        function hideLastAnswer(){
+            // rotacionar ícone anterior a posição inicial
+            lastImg.style.transform = "rotateX(360deg)";
+
+            // estilo da questão anterior normal
+            lastQuestion.style.fontWeight = 400;
+
+            // esconder resposta anterior
+            lastAnswer.style.display = "none";
+        }
+
+        hideLastAnswer();
+    }
+
     // rotacionar ícone
     img.style.transform = "rotateX(180deg)";
+    lastImg = img; // última imagem clicada
 
     // questão em negrito
     let question0 = document.getElementsByClassName("js-question0")[0];
+    lastQuestion = question0; // última questão clicada
     question0.style.fontWeight = 700;
 
     // mostrar a resposta
     let answer0 = document.getElementsByClassName("js-answer0")[0];
-    lastAnswer = answer0; // última questão clicada
-    console.log(lastAnswer);
-
+    lastAnswer = answer0; // última resposta mostrada
     answer0.style.display = "inline";
-
-    // somar número de cliques no contador
-    c++;
-    
-    // se o contador de cliques for divisível por 2 executa a função
-    if (c % 2 === 0){
-        function hideAnswer(){
-            // rotacionar ícone a posição inicial
-            img.style.transform = "rotateX(360deg)";
-
-            // estilo da questão normal
-            question0.style.fontWeight = 400;
-
-            // esconder resposta
-            answer0.style.display = "none";
-        }
-        
-        hideAnswer();
-    }
 }
 
 
@@ -44,49 +41,57 @@ function jsAnswer0(img){
 
 //resposta um
 function jsAnswer1(img){
+    // esconder resposta anterior se for diferente de undefined
+    if(lastImg !== undefined && lastQuestion !== undefined && lastAnswer !== undefined){
+        function hideLastAnswer(){
+            // rotacionar ícone anterior a posição inicial
+            lastImg.style.transform = "rotateX(360deg)";
+
+            // estilo da questão anterior normal
+            lastQuestion.style.fontWeight = 400;
+
+            // esconder resposta anterior
+            lastAnswer.style.display = "none";
+        }
+
+        hideLastAnswer();
+    }
+
     // rotacionar ícone
     img.style.transform = "rotateX(180deg)";
+    lastImg = img; // última imagem clicada
 
     // questão em negrito
     let question1 = document.getElementsByClassName("js-question1")[0];
+    lastQuestion = question1; // última questão clicada
     question1.style.fontWeight = 700;
-    
-    // esconder resposta anterior
-    function hideLastAnswer(){
-        lastAnswer.style.display = "none";
-    }
-
-    hideLastAnswer();
 
     // mostrar a resposta
     let answer1 = document.getElementsByClassName("js-answer1")[0];
-    lastAnswer = answer1; // última questão clicada
-    console.log(lastAnswer);
+    lastAnswer = answer1; // última reposta mostrada
 
     answer1.style.display = "inline";
-
-    // somar número de cliques no contador
-    c++;
-    
-    // se o contador de cliques for divisível por 2 executa a função
-    if (c % 2 === 0){
-        function hideAnswer(){
-            // rotacionar ícone a posição inicial
-            img.style.transform = "rotateX(0deg)";
-
-            // estilo da questão normal
-            question1.style.fontWeight = 400;
-
-            // esconder resposta
-            answer1.style.display = "none";
-        }
-        
-        hideAnswer();
-    }
 }
 
 // resposta dois
 function jsAnswer2(img){
+    // esconder resposta anterior se for diferente de undefined
+    if(lastImg !== undefined && lastQuestion !== undefined && lastAnswer !== undefined){
+        function hideLastAnswer(){
+            // rotacionar ícone anterior a posição inicial
+            lastImg.style.transform = "rotateX(360deg)";
+
+            // estilo da questão anterior normal
+            lastQuestion.style.fontWeight = 400;
+
+            // esconder resposta anterior
+            lastAnswer.style.display = "none";
+        }
+
+        hideLastAnswer();
+    }
+    // aqui! substituir para answer2
+
     // rotacionar ícone
     img.style.transform = "rotateX(180deg)";
 
