@@ -19,7 +19,7 @@ body{
     background-size: cover;
     height: 100%;
     margin: 0;
-    padding: 150px 20px 0;
+    padding: 150px 20px 10px;
 }
 
 main.card{
@@ -126,9 +126,10 @@ a, a:visited, a:link{
     }
 
     main.card{
+        background-color: lightblue;
         padding: 0;
         max-width: 100%;
-        max-height: 560px;        
+        max-height: 450px;        
 
         position: relative;
 
@@ -152,7 +153,7 @@ a, a:visited, a:link{
     
     .card__img--bg-mobile{
         height: 800px;
-        transform: translate(-60%, 1%);
+        transform: translate(-60%, 15%);
     }
 
     .card__img--mobile{
@@ -184,7 +185,7 @@ a, a:visited, a:link{
 
     .card__issue{
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     
         display: flex;
         flex-flow: row wrap;
@@ -197,6 +198,6 @@ a, a:visited, a:link{
     }
 
     hr{
-        margin-top: 5px;
+        margin-top: 15px;
     }
 }
