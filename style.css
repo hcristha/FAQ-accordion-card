@@ -72,7 +72,7 @@ section.card__faq{
 
 .card__issue{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     display: flex;
     flex-flow: row wrap;
@@ -103,7 +103,7 @@ hr{
     height: 1px;
     width: 100%;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 footer.attribution{
