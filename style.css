@@ -29,7 +29,7 @@ main.card{
     box-sizing: border-box;
     padding: 0 25px 25px;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     margin: auto;
 
     display: flex;
