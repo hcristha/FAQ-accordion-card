@@ -13,7 +13,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ![NFT](./github/NFT.gif)
 
 <div align="center">
-  <a href="https://faqaccordionc.netlify.app/"><img alt="netlify" src="https://camo.githubusercontent.com/ac1874f2d238a366bfcca7e41914f188748426c3f66d3487fe1ad022e3f24039/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6c756b656d6f72616c65732f696d6167652f75706c6f61642f76313536333034333439352f726561646d655f6c6f676f732f64656d6f5f6f6e5f6e65746c6966795f626275766a7a2e706e67"></a>
+  <a href="https://faqaccordionc.netlify.app/" target="_blank"><img alt="netlify" src="https://camo.githubusercontent.com/ac1874f2d238a366bfcca7e41914f188748426c3f66d3487fe1ad022e3f24039/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6c756b656d6f72616c65732f696d6167652f75706c6f61642f76313536333034333439352f726561646d655f6c6f676f732f64656d6f5f6f6e5f6e65746c6966795f626275766a7a2e706e67"></a>
 </div>
 
 ## <!-- linha -->
@@ -43,6 +43,6 @@ Users should be able to:
 - Made with ❤ by Helen Cristhina A. 👋 [See my linkedin](https://www.linkedin.com/in/hcristha/)
 - Frontend Mentor - [@hcristha](https://www.frontendmentor.io/profile/hcristha)
 <div align="center">
-  <a href="https://github.com/hcristha"><img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" alt="askMe"></a>
+  <a href="https://github.com/hcristha" target="_blank"><img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" alt="askMe"></a>
 </div>
 
