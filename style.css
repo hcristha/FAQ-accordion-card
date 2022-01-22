@@ -38,7 +38,7 @@ main.card{
 }
 
 div.card__img{
-    background-color: var(--bg-content);
+    background-color: lightpink;
     border-radius: 25px;
     box-sizing: border-box;
     height: 110px;
@@ -129,6 +129,7 @@ a, a:visited, a:link{
     }
 
     main.card{
+        background-color: lightpink;
         padding: 0;
         max-width: 100%;
         /* height: 450px; */
@@ -142,10 +143,9 @@ a, a:visited, a:link{
     }
 
     div.card__img{
+        background-color: lightgreen;
         height: 450px;
         width: 450px;
-        /* overflow-x: hidden;
-        overflow-y: visible; */
 
         position: relative;
 
